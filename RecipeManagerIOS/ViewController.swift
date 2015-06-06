@@ -12,26 +12,26 @@ import SwiftCSV
 class ViewController: UIViewController {
 
     @IBOutlet weak var recipeTextView: UITextView!
+    
+    @IBOutlet weak var selectIdTextField: UITextField!
 
     let delimiterInCSV = NSCharacterSet(charactersInString: "\t")
     let csvFileName = "recipe-data"
     let recipeTitleHeader = "title"
+    var recipeData = [String: String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        selectIdTextField.addTarget(self, action: "selectIdTextFieldValueChanged:", forControlEvents: UIControlEvents.ValueChanged)
 
         let filePath = NSBundle.mainBundle().pathForResource(csvFileName, ofType: "csv")
 
         if let filePath = filePath {
             let fileURL = NSURL(fileURLWithPath: filePath)
             if let fileURL = fileURL, csv = CSV(contentsOfURL: fileURL, delimiter: delimiterInCSV, error: nil) {
-                var fileOutput = ""
-                var recipeId = 1
                 for readLine in csv.rows {
                     if let recipeTitle = readLine[recipeTitleHeader] {
                         fileOutput += "\(recipeId): \(recipeTitle)\n"
-                        recipeId++
                     }
                 }
                 recipeTextView.text = fileOutput
@@ -48,6 +48,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func selectIdTextFieldValueChanged(sender: UITextField) {
 
+    }
 }
 
