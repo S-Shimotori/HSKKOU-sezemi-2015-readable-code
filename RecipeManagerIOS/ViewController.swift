@@ -27,9 +27,11 @@ class ViewController: UIViewController {
             let fileURL = NSURL(fileURLWithPath: filePath)
             if let fileURL = fileURL, csv = CSV(contentsOfURL: fileURL, delimiter: delimiterInCSV, error: nil) {
                 var fileOutput = ""
+                var recipeId = 1
                 for readLine in csv.rows {
                     if let recipeTitle = readLine[recipeTitleHeader] {
-                        fileOutput += "\(recipeTitle)\n"
+                        fileOutput += "\(recipeId): \(recipeTitle)\n"
+                        recipeId++
                     }
                 }
                 recipeTextView.text = fileOutput
