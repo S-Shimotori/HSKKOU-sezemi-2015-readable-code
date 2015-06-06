@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>91E33D87-568B-42CD-BEB9-052F6972C3C6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RecipeManagerIOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>76A9DD80AA8BD600FF318B136D65746B4092F5DC</key>
+		<string>https://github.com/HSKKOU/HSKKOU-sezemi-2015-readable-code.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RecipeManagerIOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>76A9DD80AA8BD600FF318B136D65746B4092F5DC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HSKKOU/HSKKOU-sezemi-2015-readable-code.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>76A9DD80AA8BD600FF318B136D65746B4092F5DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>76A9DD80AA8BD600FF318B136D65746B4092F5DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RecipeManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>
