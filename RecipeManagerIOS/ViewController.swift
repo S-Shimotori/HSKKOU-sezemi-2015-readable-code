@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftCSV
 
 class ViewController: UIViewController {
 
@@ -16,10 +17,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let filePath = NSBundle.mainBundle().pathForResource("recipe-data", ofType: "csv")
-        let fileOutput = NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding, error: nil) as! String
-        
-        recipeTextView.text = fileOutput
+        let filePath = NSURL(string: "recipe-data.csv")
+
+        if let filePath = filePath {
+            var error: NSErrorPointer = nil
+            if let csv = CSV(contentsOfURL: filePath, error: error) {
+                println(csv)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
