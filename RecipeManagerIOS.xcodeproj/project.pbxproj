@@ -14,6 +14,7 @@
 		0D2C98911B2298A500D95276 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2C98901B2298A500D95276 /* Images.xcassets */; };
 		0D2C98941B2298A500D95276 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2C98921B2298A500D95276 /* LaunchScreen.xib */; };
 		0D2C98A01B2298A500D95276 /* RecipeManagerIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C989F1B2298A500D95276 /* RecipeManagerIOSTests.swift */; };
+		0D2C98AC1B22B45F00D95276 /* recipe-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0D2C98AB1B22B45F00D95276 /* recipe-data.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0D2C98991B2298A500D95276 /* RecipeManagerIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeManagerIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2C989E1B2298A500D95276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2C989F1B2298A500D95276 /* RecipeManagerIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManagerIOSTests.swift; sourceTree = "<group>"; };
+		0D2C98AB1B22B45F00D95276 /* recipe-data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "recipe-data.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				0D2C98921B2298A500D95276 /* LaunchScreen.xib */,
 				0D2C98881B2298A500D95276 /* RecipeManagerIOS.xcdatamodeld */,
 				0D2C98841B2298A500D95276 /* Supporting Files */,
+				0D2C98AB1B22B45F00D95276 /* recipe-data.csv */,
 			);
 			path = RecipeManagerIOS;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2C98AC1B22B45F00D95276 /* recipe-data.csv in Resources */,
 				0D2C988F1B2298A500D95276 /* Main.storyboard in Resources */,
 				0D2C98941B2298A500D95276 /* LaunchScreen.xib in Resources */,
 				0D2C98911B2298A500D95276 /* Images.xcassets in Resources */,
@@ -415,6 +419,7 @@
 				0D2C98A51B2298A500D95276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D2C98A61B2298A500D95276 /* Build configuration list for PBXNativeTarget "RecipeManagerIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				0D2C98A81B2298A500D95276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

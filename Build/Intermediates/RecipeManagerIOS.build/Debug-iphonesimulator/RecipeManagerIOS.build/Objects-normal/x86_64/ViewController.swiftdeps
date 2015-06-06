@@ -4,15 +4,29 @@ provides:
 nominals:
 - "C16RecipeManagerIOS14ViewController"
 class-members:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "recipeTextView"
+- "didReceiveMemoryWarning"
 top-level:
+- !private "NSBundle"
+- !private "NSUTF8StringEncoding"
+- "UITextView"
+- !private "NSString"
 - "UIViewController"
+- !private "String"
+- !private "StringLiteralType"
 member-access:
-- "CSo8NSObject"
-- "CSo16UIViewController"
-- "PSs9AnyObject"
+- !private "CSo6UIView"
+- !private "CSo10UITextView"
 - "CSo11UIResponder"
+- "CSo8NSObject"
+- !private "Sq"
+- !private "CSo8NSBundle"
+- "PSs9AnyObject"
+- !private "CSo12UIScrollView"
+- !private "CSo8NSString"
+- "C16RecipeManagerIOS14ViewController"
+- "CSo16UIViewController"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

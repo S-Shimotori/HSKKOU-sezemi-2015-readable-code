@@ -113,11 +113,13 @@ SWIFT_CLASS("_TtC16RecipeManagerIOS11AppDelegate")
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC16RecipeManagerIOS14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextView * __null_unspecified recipeTextView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

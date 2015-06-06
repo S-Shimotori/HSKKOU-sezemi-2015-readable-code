@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var recipeTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let filePath = NSBundle.mainBundle().pathForResource("recipe-data", ofType: "csv")
+        let fileOutput = NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding, error: nil) as! String
+        
+        recipeTextView.text = fileOutput
     }
 
     override func didReceiveMemoryWarning() {
