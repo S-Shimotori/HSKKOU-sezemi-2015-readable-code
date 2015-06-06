@@ -12,18 +12,32 @@ import SwiftCSV
 class ViewController: UIViewController {
 
     @IBOutlet weak var recipeTextView: UITextView!
+
+    let delimiterInCSV = NSCharacterSet(charactersInString: "\t")
+    let csvFileName = "recipe-data"
+    let recipeTitleHeader = "title"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let filePath = NSURL(string: "recipe-data.csv")
+
+        let filePath = NSBundle.mainBundle().pathForResource(csvFileName, ofType: "csv")
 
         if let filePath = filePath {
-            var error: NSErrorPointer = nil
-            if let csv = CSV(contentsOfURL: filePath, error: error) {
-                println(csv)
+            let fileURL = NSURL(fileURLWithPath: filePath)
+            if let fileURL = fileURL, csv = CSV(contentsOfURL: fileURL, delimiter: delimiterInCSV, error: nil) {
+                var fileOutput = ""
+                for readLine in csv.rows {
+                    if let recipeTitle = readLine[recipeTitleHeader] {
+                        fileOutput += "\(recipeTitle)\n"
+                    }
+                }
+                recipeTextView.text = fileOutput
+            } else {
+                println("csv取得失敗")
             }
+        } else {
+            println("filepath取得失敗")
         }
     }
 
