@@ -8,5 +8,7 @@
 
 import Foundation
 
-println("Hello, World!")
+
+var outputRecipe = "オムライス"
+println(outputRecipe)
 

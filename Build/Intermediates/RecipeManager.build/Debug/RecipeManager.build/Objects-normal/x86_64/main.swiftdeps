@@ -1,8 +1,10 @@
 ### Swift dependencies file v0 ###
 provides:
+- "outputRecipe"
 nominals:
 class-members:
 top-level:
+- "outputRecipe"
 - "StringLiteralType"
 - "println"
 member-access:
